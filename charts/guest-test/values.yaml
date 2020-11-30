@@ -1,0 +1,6 @@
+java:
+  applicationPort: 8080
+  image: 'hmctspublic.azurecr.io/guest/test:latest'
+  ingressHost: guest-test-{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}.internal
+  aadIdentityName: guest
+  environment:
